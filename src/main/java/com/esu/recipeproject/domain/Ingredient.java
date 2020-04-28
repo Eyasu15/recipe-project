@@ -8,7 +8,7 @@ public class Ingredient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String desctription;
+    private String description;
     private Float amount;
 
     @ManyToOne
@@ -25,12 +25,12 @@ public class Ingredient {
         this.id = id;
     }
 
-    public String getDesctription() {
-        return desctription;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDesctription(String desctription) {
-        this.desctription = desctription;
+    public void setDescription(String desctription) {
+        this.description = desctription;
     }
 
     public Float getAmount() {
