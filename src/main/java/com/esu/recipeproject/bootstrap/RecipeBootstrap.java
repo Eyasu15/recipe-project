@@ -199,6 +199,7 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         tacosRecipe.addIngredient(new Ingredient("lime, cut into wedges", new BigDecimal(4), eachUom));
         tacosRecipe.getCategories().add(americanCategory);
         tacosRecipe.getCategories().add(mexicanCategory);
+        tacosRecipe.setUrl("https://www.simplyrecipes.com/");
 
         recipes.add(tacosRecipe);
         return recipes;

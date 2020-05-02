@@ -9,5 +9,5 @@ import java.util.Set;
 
 public interface RecipeRepository extends CrudRepository<Recipe, Long> {
     Iterable<Recipe> findAll();
-
+    Optional<Recipe> findById(Long id);
 }
